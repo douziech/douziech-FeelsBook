@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FeelsBook</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="feelsbook">FeelsBook</string>
+    <string name="chronological_record">Chronological Record</string>
+    <string name="title_activity_record_feeling">RecordFeelingActivity</string>
+    <string name="record_the_feeling_of_love">Record the feeling of LOVE.</string>
+    <string name="record_the_feeling_of_joy">Record the feeling of JOY.</string>
+    <string name="record_the_feeling_of_surprise">Record the feeling of SURPRISE.</string>
+    <string name="record_the_feeling_of_anger">Record the feeling of ANGER.</string>
+    <string name="record_the_feeling_of_sadness">Record the feeling of SADNESS.</string>
+    <string name="record_the_feeling_of_fear">Record the feeling of FEAR.</string>
+    <string name="emotion_count">Emotion Count</string>
+</resources>
