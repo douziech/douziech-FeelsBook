@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".ChronoRecordActivity" />
         <activity android:name=".recordFeelingActivity" />
-        <activity android:name=".emotionCountActivity"></activity>
+        <activity android:name=".EmotionCountActivity"></activity>
     </application>
 
 </manifest>

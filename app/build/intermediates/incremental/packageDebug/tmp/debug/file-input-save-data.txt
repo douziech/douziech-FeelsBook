@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Fri Oct 05 12:04:58 MDT 2018
-1.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/337
+#Fri Oct 05 13:05:29 MDT 2018
+1.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/355
 2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/338
+2.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/354
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
@@ -12,8 +12,8 @@
 count=4
 1.set=DEX
 0.path=classes.dex
-3.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/335
+3.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/353
 0.set=DEX
-0.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/336
+0.base=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/352
 2.baseType=DIRECTORY
 1.path=classes.dex

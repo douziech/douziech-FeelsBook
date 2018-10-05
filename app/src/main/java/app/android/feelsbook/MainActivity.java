@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void emotionCount (View v){
             Toast.makeText(this, "Total count for each feeling...", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(MainActivity.this, emotionCountActivity.class);
+            Intent intent = new Intent(MainActivity.this, EmotionCountActivity.class);
             startActivity(intent);
         }
 

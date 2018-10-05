@@ -22,7 +22,7 @@ package app.android.feelsbook;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class emotionCountActivity extends AppCompatActivity {
+public class EmotionCountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

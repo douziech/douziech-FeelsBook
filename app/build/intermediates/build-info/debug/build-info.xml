@@ -6,7 +6,7 @@
     density="hdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1538763105722"
+    timestamp="1538766418087"
     token="-5593455994155497640"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -24,10 +24,10 @@
         duration="0" />
 
     <artifact
-        location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
     <artifact
         location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -65,13 +65,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1538763105722"
+        timestamp="1538766418087"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
