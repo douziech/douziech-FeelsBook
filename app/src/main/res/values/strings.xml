@@ -17,4 +17,12 @@
     <string name="record_the_feeling_of_sadness">Record the feeling of SADNESS.</string>
     <string name="record_the_feeling_of_fear">Record the feeling of FEAR.</string>
     <string name="emotion_count">Emotion Count</string>
+    <string name="recorded_on">Recorded on:</string>
+    <string name="the_feeling_of">The feeling of:</string>
+    <string name="display_feeling">Display feeling</string>
+    <string name="was_recorded_on">Was recorded on:</string>
+    <string name="optional_comment">Optional Comment</string>
+    <string name="feeling">Feeling</string>
+    <string name="submit">Submit</string>
+    <string name="a_chronological_record_of_all_feelings_that_have_been_logged">A chronological record of all feelings that have been logged.</string>
 </resources>

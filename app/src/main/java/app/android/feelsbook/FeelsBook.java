@@ -1,88 +1,94 @@
+
+/* FeelsBook : An application to record and track emotions as they arise.
+   Copyright (C) 2018 D.M.Douziech; douziech@ualberta.ca
+
+    FeelsBook is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
 package app.android.feelsbook;
+
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Enumeration;
+import java.util.Hashtable;
 
 //This has to be a persistent database.
 
 
 public class FeelsBook extends RecordFeeling implements Serializable {
 
-    private ArrayList<RecordFeeling> book;
-    private Dictionary count_dicEmotions;
+    private static ArrayList<RecordFeeling> book = null;
+    private static Hashtable <String, Integer> count_dicEmotions = null;
 
 
-    //Constructor - this should only be called once to initially create the database.
+    //Default constructor
+    FeelsBook(){}
 
-    FeelsBook(){
-        if (book.equals(null)){
-            this.book = new ArrayList <RecordFeeling>();
-            this.count_dicEmotions = new Dictionary() {
-                @Override
-                public int size() {
-                    return 0;
-                }
 
-                @Override
-                public boolean isEmpty() {
-                    return false;
-                }
-
-                @Override
-                public Enumeration keys() {
-                    return null;
-                }
-
-                @Override
-                public Enumeration elements() {
-                    return null;
-                }
-
-                @Override
-                public Object get(Object key) {
-                    return null;
-                }
-
-                @Override
-                public Object put(Object key, Object value) {
-                    return null;
-                }
-
-                @Override
-                public Object remove(Object key) {
-                    return null;
-                }
-            }
+    public static Hashtable getDictionary() {
+        if( count_dicEmotions == null){
+            count_dicEmotions = new Hashtable<String, Integer>();
         }
+        return count_dicEmotions;
+    }
+
+    public static ArrayList<RecordFeeling> getBook(){
+        if (book == null){
+            book = new ArrayList<RecordFeeling>();
+        }
+        return book;
+    }
 
 
+
+    public void addRecord(RecordFeeling entry) {
+
+        String feeling = entry.getFeeling();
+        count_dicEmotions = getDictionary();
+        book = getBook();
+
+        if (count_dicEmotions.containsKey(feeling) == true){
+            int count = count_dicEmotions.remove(feeling);
+            count_dicEmotions.put(feeling, count);
+            } else count_dicEmotions.put(feeling, 1);
+
+
+        book.add(entry);
 
     }
 
-    public void addFeeling(RecordFeeling entry){
-
-        Object count = count_dicEmotions.get(entry.getFeeling());
-
-        this.book.add(entry);
-
-        //check if the emotion is already in the dic:
-        if (count.equals(null)){
-            count_dicEmotions.put(entry.getFeeling(), 1);
-        } else {
-            count =  (int) count + 1;
-            count_dicEmotions.put(entry.getFeeling(), count);
-
-        }
-        count_dicEmotions.put(entry.getFeeling(), )
-
-        //Perhaps add and exception handler here to check if the object-argument is indeed a RecordFeeling object.
-
-        //Determine which feeling has been added and update the count accordingly.
-
+    public RecordFeeling getRecord(int index){
+        return book.get(index);
     }
+
+    public void deleteRecord(int index){
+        book.remove(index);
+    }
+
+    public void replaceRecord(int index, RecordFeeling newRecord){
+        book.set(index, newRecord);
+    }
+
+    public int bookSize(){
+        int size = book.size();
+        return size;
+    }
+
 
 
 
 }
+
+

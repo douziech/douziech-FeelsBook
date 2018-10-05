@@ -1,4 +1,13 @@
-#Tue Oct 02 18:04:03 MDT 2018
-base.0=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/34
+#Fri Oct 05 12:04:57 MDT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
 path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.3=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/336
+base.2=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/337
+base.1=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/335
+base.0=/Users/AlphaRoot/Desktop/Assignment1/douziech-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/338

@@ -14,9 +14,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="none"
         android:text="@string/chronological_record"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/chronoRecord_List"
+        android:layout_width="343dp"
+        android:layout_height="373dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChronoRecordHeader" />
+
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,4 @@
+
 /* FeelsBook : An application to record and track emotions as they arise.
    Copyright (C) 2018 D.M.Douziech; douziech@ualberta.ca
 
@@ -19,11 +20,17 @@
 
 package app.android.feelsbook;
 
-import java.util.Date;
+import android.widget.EditText;
+import android.widget.ListView;
 
-public interface Record {
+import java.util.ArrayList;
 
-    public String getComment();
+class Chrono_Controller {
 
-    public Date getTimeStamp();
+    public ArrayList<String> list(){
+        RecordFeeling_Controller feeling_controller = new RecordFeeling_Controller();
+        ArrayList<String> entries = new ArrayList<String>();
+        entries = feeling_controller.generateCompositeStringArray();
+        return entries;
+    }
 }

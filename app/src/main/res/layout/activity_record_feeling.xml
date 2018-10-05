@@ -7,15 +7,95 @@
     tools:context=".recordFeelingActivity">
 
     <EditText
-        android:id="@+id/DateText"
-        android:layout_width="wrap_content"
+        android:id="@+id/feelingRecordedNotification_Text"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/feeling"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Recorded on:"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="none|textPersonName"
+        android:text="@string/the_feeling_of"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayFeeling_Text"
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeStampRecordedNotification_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toEndOf="@+id/feelingRecordedNotification_Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <EditText
+        android:id="@+id/timeStampRecordedNotification_Text"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="none|textPersonName"
+        android:text="@string/was_recorded_on"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feelingRecordedNotification_Text" />
+
+    <TextView
+        android:id="@+id/displayTimeStamp_Text"
+        android:layout_width="253dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeStampRecordedNotification_Text"
+        app:layout_constraintTop_toBottomOf="@+id/displayFeeling_Text" />
+
+    <EditText
+        android:id="@+id/optionalComment_Text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="@string/optional_comment"
+        android:inputType="textMultiLine|textLongMessage|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/commentSubmitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayTimeStamp_Text" />
+
+    <Button
+        android:id="@+id/commentSubmitButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="captureOptionalText"
+        android:text="@string/submit"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
