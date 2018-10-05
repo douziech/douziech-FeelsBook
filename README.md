@@ -1,2 +1,3 @@
 # douziech-FeelsBook
-An app to record daily feelings... 
+An app to record feelings as they arise.
+
